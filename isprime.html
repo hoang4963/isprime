@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt('nhap so '));
+
+    function isprime()
+    {
+
+        let check = true;
+        let i = 2
+        while (i <= Math.sqrt(a))
+        {
+            if ( a % i == 0) {
+                check = false;
+                break;}
+            else i++
+        }
+        if (check)
+            alert(a + ' la so nguyen to')
+        else alert(a + ' khong phai so nguyen to')
+    }
+    isprime()
+</script>
+
+</body>
+</html>
